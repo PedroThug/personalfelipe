@@ -575,6 +575,15 @@ section {
   margin: 40px 0;
 }
 
+@media (max-width: 768px) {
+  .about-stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+
 .about-stats h3 {
   font-size: 32px;
   color: #00ff88;
