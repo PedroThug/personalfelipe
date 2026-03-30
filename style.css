@@ -54,6 +54,18 @@ body {
 
 .logo img {
   height: 70px; /* 🔥 antes 100px tava quebrando tudo */
+  
+   filter: brightness(1.2) contrast(1.2);
+  transition: 0.3s;
+
+  filter: drop-shadow(0 0 8px rgba(0,255,136,0.4));
+
+}
+/* LOGO brilho */
+.logo img:hover {
+  transform: scale(1.05);
+
+  filter: drop-shadow(0 0 15px #00ff88);
 }
 
 /* MENU CENTRAL */
