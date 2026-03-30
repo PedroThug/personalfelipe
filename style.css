@@ -511,13 +511,6 @@ section {
   animation: scroll 60s linear infinite;
 }
 
-/* DESLIGA ANIMAÇÃO NO MOBILE */
-@media (max-width: 768px) {
-  .carousel-track {
-    animation: none;
-    overflow-x: auto;
-  }
-}
 /* IMAGENS */
 .carousel img {
   height: 320px;
