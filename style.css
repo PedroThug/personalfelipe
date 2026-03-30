@@ -494,12 +494,21 @@ section {
   mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
+/* ajusta bug carrosel mobile */
+@media (max-width: 768px) {
+  .carousel {
+    mask-image: none;
+  }
+}
+
 .carousel-track {
   display: flex;
   gap: 20px;
   width: max-content;
+  will-change: transform;
+  transform: translateZ(0);
 
-  animation: scroll 40s linear infinite; /* mais premium */
+  animation: scroll 60s linear infinite;
 }
 
 /* IMAGENS */
