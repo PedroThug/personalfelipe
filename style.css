@@ -154,14 +154,22 @@ body {
 }
 
 .hero h1 {
-  font-size: 64px;
+  font-size: clamp(28px, 6vw, 64px);
   font-weight: 900;
   text-transform: uppercase;
   line-height: 1.1;
+  letter-spacing: 1px;
 
   text-shadow: 0 10px 50px rgba(0,0,0,0.9);
 }
 
+/*hero h1 mobile */
+@media (max-width: 768px) {
+  .hero h1 {
+    text-align: center;
+  }
+
+}
 .hero p {
   margin: 20px 0;
   font-size: 18px;
@@ -170,15 +178,30 @@ body {
 
 /* BOTÃO PREMIUM */
 .btn {
-  padding: 15px 40px;
+  display: inline-block;
+
+  padding: 12px 25px;
+  font-size: 14px;
+
   background: #00ff88;
   color: black;
-  font-weight: bold;
-  border-radius: 4px;
-  text-decoration: none;
 
-  box-shadow: 0 0 25px rgba(0,255,136,0.5);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+
+  box-shadow: 0 0 20px rgba(0,255,136,0.4);
   transition: 0.3s;
+}
+/* BOTÃO PREMIUM mobile */
+@media (max-width: 768px) {
+  .btn {
+    width: auto; /* evita esticar demais */
+    max-width: 90%;
+
+    padding: 12px 20px;
+    font-size: 13px;
+  }
 }
 
 .btn:hover {
