@@ -88,22 +88,6 @@ body {
   font-weight: bold;
 }
 
-/* LINHA HOVER */
-.menu a::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background: #00ff88;
-  transition: 0.3s;
-}
-
-.menu a:hover::after {
-  width: 100%;
-}
-
 /* DIREITA */
 .right {
   justify-self: end;
