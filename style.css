@@ -144,6 +144,15 @@ body {
     url('img/principal/fundo2.png') center/cover no-repeat;
 }
 
+/*  AJUSTA HERO MOBILE */
+@media (max-width: 768px) {
+  .hero {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+
 /* TEXTO */
 .hero-content {
   z-index: 3;
@@ -219,6 +228,12 @@ body {
   animation: fadeUp 1s ease forwards;
 
   z-index: 2;
+}
+/* IMAGEM DO ATLETA MOBILE SUMIR */
+@media (max-width: 768px) {
+  .hero-img {
+    display: none;
+  }
 }
 
 /* SOMBRA / PROFUNDIDADE */
